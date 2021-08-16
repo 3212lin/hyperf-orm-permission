@@ -1,0 +1,28 @@
+{
+    "name": "3212lin/hyperf-orm-permission",
+    "description": "An authorization library that supports access control models like ACL, RBAC, ABAC in EsaySwoole Hyperf Orm.",
+    "homepage" : "https://www.easyswoole.com/",
+    "license" : "Apache-2.0",
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "lincheng",
+            "email": "18796013212@139.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.0",
+        "easyswoole/hyperf-orm": "dev-master",
+        "casbin/casbin": "^2.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "EasySwoole\\HyperfOrm\\Permission\\": "src/"
+        }
+    },
+    "extra": {
+        "easyswoole": {
+            "config": "EasySwoole\\HyperfOrm\\Permission\\ConfigProvider"
+        }
+    }
+}
